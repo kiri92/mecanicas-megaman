@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://personaje/jugador/player.tscn" type="PackedScene" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 525.727, 20.4189 )
+
+[node name="Node" type="Node"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -38.5065
+margin_top = 539.175
+margin_right = 1013.49
+margin_bottom = 579.175
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 1081.08
+margin_top = 392.255
+margin_right = 2133.08
+margin_bottom = 432.255
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+margin_left = 2138.28
+margin_top = 351.742
+margin_right = 3184.28
+margin_bottom = 387.742
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+margin_left = 2136.92
+margin_top = 193.939
+margin_right = 3182.92
+margin_bottom = 229.939
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+margin_left = 2138.28
+margin_top = 316.372
+margin_right = 3184.28
+margin_bottom = 352.372
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 487.013, 557.389 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1607.96, 411.83 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2660.89, 337.009 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2660.89, 211.855 )
+shape = SubResource( 1 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 481.572, 247.587 )
